@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+
+.text-box{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 800;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+.text{
+    width: 100%;
+    padding: 20% ;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.author{
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    top: 40vh;
+}
+
+blockquote:before, blockquote:after {
+    position: absolute;
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 2rem;
+    height: 2rem;
+}
+
+blockquote:before {
+    content: "“";
+    left: 3rem;
+    top: 2rem;
+}
+
+blockquote:after {
+    content: "„";
+    top: 10rem;
+    right: 5rem;
+}
+
+
+@media  (max-width: 450px){
+    .text-box{
+        font-size: 15px;
+    }
+
+    .text{
+        margin-top: 20px;
+    }
+
+    .author{
+        top:30vh;
+    }
+
+    blockquote:before, blockquote:after{
+        font-size: 5rem;
+    }
+
+    blockquote:before{
+        left: 1rem;
+        top: .75rem;
+    }
+
+    blockquote:after{
+        top: 6rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 770px) and (min-width:800px){
+    .text-box{
+        font-size: 20px;
+    }
+
+    .text{
+        margin-top: 20px;
+    }
+
+    .author{
+        top:30vh;
+    }
+
+    blockquote:before, blockquote:after{
+        font-size: 5rem;
+    }
+
+    blockquote:before{
+        left: 1rem;
+        top: .75rem;
+    }
+
+    blockquote:after{
+        top: 12rem;
+        right: 1rem;
+    }
+}
+@media(min-width:1020px){
+    .author{
+        top:60vh;
+    }
+    blockquote:after{
+        top: 15rem;
+        right: 5rem;
+    }
+}

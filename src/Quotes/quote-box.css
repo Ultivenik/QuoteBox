@@ -1,0 +1,36 @@
+.quote-container{
+    position: absolute;
+    z-index: 100;
+    left: 25vw;
+    top: 30vh;
+    right: 0;
+    width: 50vw;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 450px){
+    .quote-container{
+        position: absolute;
+        z-index: 100;
+        left: 10vw;
+        top: 35vh;
+        right: 0;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 770px){
+    .quote-container{
+        width: 95vw;
+        left: 3vw;
+    }
+}
+@media(min-width:1020px) and (max-width:1025px){
+    .quote-container{
+        width: 95vw;
+        left: 2.5vw;
+        top: 15vh;
+    }
+}
